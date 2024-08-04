@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="x-icon" href="logo.jpg">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Choice</title>
+    <script src="https://kit.fontawesome.com/9af6636853.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        p{
+            font-size: 3rem;
+            color: white;
+            
+        }
+        .main{
+            display: block;
+            margin-left: 30vw;
+            margin-top: 30vh;
+        }
+        .btn{
+            display: flex;
+        }
+        .conbtn button{
+            height: 53px;
+            margin: 21px 93px;
+            width: 7vw;
+            font-size: 2rem;
+            color: white;
+            background-color: red;
+            border-style: none;
+            border-radius: 25px;
+            border: 2px solid white;
+        }
+        .logo p {
+    color: white;
+    font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: red;
+  text-align: center;
+  border-radius: 10px;
+
+}
+.logo{
+    margin: 5vh;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <h2><p>Me<i class="fa-solid fa-play"></i></p> MeTube</h2>
+    </div>
+    <div class="main">
+       
+    
+        <p>Are you sure you want to Quit?</p><br>
+        <div class="conbtn">
+            <button id="yes">Yes</button>
+            <button id="no">No</button>
+
+        </div>
+    </div>
+    <script >
+        const btnyes=document.getElementById("yes");
+const btnno=document.getElementById("no");
+
+btnyes.addEventListener('click',function(){
+    location.href='mood.html';
+})
+btnno.addEventListener('click',function(){
+    window.history.back()
+})
+
+    </script>
+</body>
+</html>

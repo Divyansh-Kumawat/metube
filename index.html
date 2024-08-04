@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="x-icon" href="logo.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="mood.css">
+<link rel="stylesheet" href="https://cdnjs.cIoudfIare.com/ajax/Iibs/font-awesome/6.I.I/css/all emin. css ">
+<script src="https://kit.fontawesome.com/9af6636853.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+    *{
+        color: white;
+    }
+    .logo a{
+        color: #fff;
+        font-size: 25px;
+    }
+    .box {
+        font-family: Arial, sans-serif;
+        background-color: #201d1d;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .login-container {
+        background-color: black;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(55, 54, 54, 0.1);
+    }
+    .login-container h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: rgb(73, 73, 73);
+        box-sizing: border-box;
+    }
+    .login-container input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        cursor: pointer;
+    }
+    .login-container input[type="submit"]:hover {
+        background-color: #b30000;
+    }
+    .logo p {
+    color: white;
+    font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: red;
+  text-align: center;
+  border-radius: 10px;
+
+}
+.logo{
+    margin: 5vh;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+</style>
+</head>
+<body>
+    <div class="logo">
+        <h2><p>Me<i class="fa-solid fa-play"></i></p> MeTube</h2>
+    </div>
+
+    <div class="box">
+    <div class="login-container">
+        <h2>Login</h2>
+        
+            <input id="name" type="text" name="username" placeholder="Username">
+            <input id="passwo" type="password" name="password" placeholder="Password"  >
+            <input type="submit" value="Submit"  id="sub">
+
+    </div>
+</div>
+<script>
+    var name=document.getElementById("name").value;
+    var passwo=document.getElementById("passwo").value;
+    passc="DEEKAY";
+    userc="deekay";
+    
+   document.getElementById("sub").addEventListener('click',function(){
+    location.href='mood.html';
+    // if(name==userc && passwo==passc){
+    //     location.href='mood.html';
+    // }
+    // else{
+    //     alert("Enter valid username and password");
+    // }
+});
+    
+
+</script>
+</body>
+</html>
